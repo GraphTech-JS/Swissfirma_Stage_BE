@@ -24,7 +24,7 @@
     "phone": {
       "type": "string",
       "required": true,
-      "regex": "^\\\\+\\\\d{10,15}$"
+      "regex": "^\\+\\d{10,15}$"
     }
   }
 }
