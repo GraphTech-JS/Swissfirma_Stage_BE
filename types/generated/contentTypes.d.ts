@@ -392,7 +392,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    data: Schema.Attribute.Date & Schema.Attribute.Required;
+    date: Schema.Attribute.Date & Schema.Attribute.Required;
     description: Schema.Attribute.Text & Schema.Attribute.Required;
     faqs: Schema.Attribute.Component<'articles-components.faq-item', true>;
     image: Schema.Attribute.String & Schema.Attribute.Required;

@@ -20,7 +20,7 @@
       "type": "string",
       "required": true
     },
-    "data": {
+    "date": {
       "type": "date",
       "required": true
     },
