@@ -403,7 +403,14 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     markdown_article: Schema.Attribute.RichText & Schema.Attribute.Required;
+    metaDescription: Schema.Attribute.Text;
+    metaKeywords: Schema.Attribute.String;
+    metaTitle: Schema.Attribute.String;
+    ogDescription: Schema.Attribute.Text;
+    ogImage: Schema.Attribute.String;
+    ogTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    schema: Schema.Attribute.JSON;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
